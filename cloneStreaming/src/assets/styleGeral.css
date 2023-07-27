@@ -1,0 +1,38 @@
+﻿:root {
+    /*Variáveis de cor*/
+    --backgroundColor: hsl(0, 0%, 0%);
+    --mainCardBackground: linear-gradient(360deg, hsl(0, 0%, 7%) 14.84%, hsl(0, 0%, 14%) 70.76%, hsl(0, 0%, 25%) 100%);
+    --sideBardBackground: hsl(0, 0%, 7%);
+    --textPrimary: hsl(0, 0%, 100%);
+    --textSecondary: hsl(0, 0%, 65%);
+    --buttonBackground: hsl(0, 0%, 14%);
+    --buttonBackgroundHover: hsl(300, 1%, 16%);
+    --selectBackground: hsl(0, 0%, 16%);
+    --scrollBarBackground: hsl(0, 0%, 20%);
+
+    /*Variáveis de tamanho*/
+    --cardsBorderRadius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--backgroundColor);
+}
+
+#app {
+    height: 100vh;
+    display: grid;
+    padding: 7px 15px 15px 7px;
+    gap: 8px;
+    grid-template-columns: 13% 87%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas:
+		"side main"
+		"ft ft"
+}
