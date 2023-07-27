@@ -102,13 +102,20 @@ export default defineComponent({
 }
 
 .containerBottomListas::-webkit-scrollbar-thumb {
-	background: var(--scrollBarBackground)
+	background: var(--scrollBarBackground);
 }
 
 .listaContent {
 	display: flex;
 	margin: 10px 10px 15px;
 	white-space: nowrap;
+	width: 100%;
+}
+
+.listaContent:hover {
+	background: var(--listaContentHover);
+	transition: 200ms;
+	cursor: pointer;
 }
 
 .listaContentText {

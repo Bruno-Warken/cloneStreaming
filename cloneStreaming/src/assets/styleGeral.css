@@ -1,4 +1,6 @@
-﻿:root {
+﻿@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+:root {
     /*Variáveis de cor*/
     --backgroundColor: hsl(0, 0%, 0%);
     --mainCardBackground: linear-gradient(360deg, hsl(0, 0%, 7%) 14.84%, hsl(0, 0%, 14%) 70.76%, hsl(0, 0%, 25%) 100%);
@@ -9,11 +11,13 @@
     --buttonBackgroundHover: hsl(300, 1%, 16%);
     --selectBackground: hsl(0, 0%, 16%);
     --scrollBarBackground: hsl(0, 0%, 20%);
+    --listaContentHover: hsl(0, 0%, 10%);
 
     /*Variáveis de tamanho*/
     --cardsBorderRadius: 10px;
 }
 
+/*Reset CSS*/
 * {
     margin: 0;
     padding: 0;
