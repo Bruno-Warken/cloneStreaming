@@ -4,7 +4,7 @@
 		<div class="boaTardeGrid">
 			<div class="boaTardeContent" v-for="item in content">
 				<img class="cover" alt="cover" :src="item.imgSrc">
-				<h3>{{ item.titulo }}</h3>
+				<h4>{{ item.titulo }}</h4>
 			</div>
 		</div>
 	</div>
@@ -87,7 +87,7 @@ export default defineComponent({
 }
 
 .cover {
-	width: 80px;
+	width: 75px;
 	border-radius: 7px 0 0 7px;
 }
 

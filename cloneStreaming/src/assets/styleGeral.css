@@ -38,7 +38,7 @@ body {
     padding: 7px 15px 15px 7px;
     gap: 8px;
     grid-template-columns: 13% 87%;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 92% 8%;
     grid-template-areas:
 		"side main"
 		"ft ft"
