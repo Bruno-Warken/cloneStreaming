@@ -1,10 +1,7 @@
 ﻿<template>
-	<main class="mainContainer">
-		<header class="headerMain">
-
-		</header>
-	</main>
 	
+	<MainCard></MainCard>
+
 	<AsideBar></AsideBar>
 
 	<footer class="footer">
@@ -23,34 +20,24 @@
 </template>
 
 <script>
-import {defineComponent, onMounted, ref} from "vue";
+import {defineComponent} from "vue";
 import AsideBar from "@/components/AsideBar.vue";
+import MainCard from "@/components/MainCard.vue";
 
 
 export default defineComponent({
-	components: {AsideBar},
+	components: {MainCard, AsideBar},
 
 	setup() {
 
-		return {
-			
-		}
 	}
 })
 
 </script>
 
-
 <style>
 
 @import "../assets/styleGeral.css";
-
-.mainContainer {
-	background: var(--mainCardBackground);
-	border-radius: var(--cardsBorderRadius);
-	color: white;
-	grid-area: main;
-}
 
 /*Estilização do footer*/
 

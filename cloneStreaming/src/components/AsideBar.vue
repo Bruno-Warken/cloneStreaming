@@ -109,11 +109,6 @@ export default defineComponent({
 	border-radius: var(--cardsBorderRadius);
 }
 
-.material-symbols-outlined {
-	font-size: 30px;
-	font-weight: 300;
-}
-
 /*Estilização do container superior da sidebar*/
 .sideTopMenu {
 	height: 15%;

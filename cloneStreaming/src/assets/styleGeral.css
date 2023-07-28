@@ -12,6 +12,9 @@
     --selectBackground: hsl(0, 0%, 16%);
     --scrollBarBackground: hsl(0, 0%, 20%);
     --listaContentHover: hsl(0, 0%, 10%);
+    --botaoMainCardBackground: hsl(15, 67%, 4%);
+    --mainPageCardBackground: hsl(0, 0%, 23%);
+    --mainPageCardBackgroundHover: hsl(0, 0%, 28%);
 
     /*Variáveis de tamanho*/
     --cardsBorderRadius: 10px;
@@ -39,4 +42,17 @@ body {
     grid-template-areas:
 		"side main"
 		"ft ft"
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollBarBackground);
 }
