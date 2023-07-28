@@ -16,15 +16,10 @@
 			
 			<BoaTardeConteudo></BoaTardeConteudo>
 			
-			<TocadosRecentementeConteudo></TocadosRecentementeConteudo>
-
-			<div class="episodios">
-
-			</div>
-
-			<div class="feitoParaVoce">
-
-			</div>
+			<Sugestoes :type="Types.Recents"></Sugestoes>
+			<Sugestoes :type="Types.Podcast"></Sugestoes>
+			<Sugestoes :type="Types.Mixes"></Sugestoes>
+			
 		</div>
 	</main>
 
@@ -32,17 +27,21 @@
 
 <script>
 
-import {defineComponent, ref} from "vue";
+import {defineComponent} from "vue";
 import BoaTardeConteudo from "@/components/BoaTardeConteudo.vue";
-import TocadosRecentementeConteudo from "@/components/TocadosRecentementeConteudo.vue";
+import {Types} from "@/assets/Utils";
+import Sugestoes from "@/components/Sugestoes.vue";
 
 export default defineComponent({
 	name: "MainCard",
-	components: {TocadosRecentementeConteudo, BoaTardeConteudo},
+	computed: {
+		Types() {
+			return Types
+		}
+	},
+	components: {Sugestoes, BoaTardeConteudo},
 
 	setup() {
-
-		
 
 		return {
 			
@@ -60,7 +59,6 @@ export default defineComponent({
 	color: white;
 	overflow: auto;
 	grid-area: main;
-	/*position: relative;*/
 }
 
 .headerMain {
@@ -68,7 +66,7 @@ export default defineComponent({
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	background: rgba(58, 58, 58, 0.98);
+	background: hsla(0, 0%, 22%, 0.98);
 	position: sticky;
 	top: 0;
 }
@@ -103,8 +101,7 @@ export default defineComponent({
 }
 
 .profilePicture:hover {
-	width: 31px;
-	height: 31px;
+	opacity: 80%;
 	transition: 200ms;
 	cursor: pointer;
 }
