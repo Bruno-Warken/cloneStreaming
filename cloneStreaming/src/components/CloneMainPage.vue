@@ -4,29 +4,18 @@
 
 	<AsideBar></AsideBar>
 
-	<footer class="footer">
-		<div class="footerLeftGroup">
-
-		</div>
-
-		<div class="footerMiddleGroup">
-
-		</div>
-
-		<div class="footerRightGroup">
-
-		</div>
-	</footer>
+	<Footer></Footer>
 </template>
 
 <script>
 import {defineComponent} from "vue";
 import AsideBar from "@/components/AsideBar.vue";
 import MainCard from "@/components/MainCard.vue";
+import Footer from "@/components/Footer.vue";
 
 
 export default defineComponent({
-	components: {MainCard, AsideBar},
+	components: {Footer, MainCard, AsideBar},
 
 	setup() {
 
@@ -38,12 +27,5 @@ export default defineComponent({
 <style>
 
 @import "../assets/styleGeral.css";
-
-/*Estilização do footer*/
-
-.footer {
-	color: white;
-	grid-area: ft;
-}
 
 </style>
